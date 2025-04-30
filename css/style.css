@@ -1,3 +1,10 @@
+.border-red-500 {
+    border-color: red !important;
+  }
+  .focus:ring-red-500 {
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5) !important;
+  }
+ 
  /* Particles container for hero section */
  #particles-js {
     position: absolute;
