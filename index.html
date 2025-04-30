@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Core Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+<!-- Navigation Bar -->
+<nav class="fixed top-0 w-full shadow-md bg-blue-200 text-white z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <!-- Logo -->
+    <a href="#top" class="text-xl font-bold hover:underline">
+      <img src="./assets/logo.png" alt="logo" width="120" height="50">
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 font-semibold">
+      <li><a href="#services" class="hover:underline">Services</a></li>
+      <li><a href="#about" class="hover:underline">About Us</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="nav-toggle" class="md:hidden focus:outline-none">
+      <i class="fas fa-bars text-2xl text-blue-900"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden flex-col bg-blue-100 text-blue-800 px-4 py-3 space-y-2 transition-all duration-300 ease-in-out transform -translate-y-5 opacity-0">
+    <a href="#services" class="block hover:underline">Services</a>
+    <a href="#about" class="block hover:underline">About Us</a>
+    <a href="#contact" class="block hover:underline">Contact</a>
+  </div>
+</nav>
+
+
+    
+<!-- Hero Section with Particle Effect -->
+<header id="top" class="relative flex flex-col items-center justify-center h-screen bg-blue-300 text-blue text-center overflow-hidden">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10 max-w-4xl px-6">
+        <h1 class="text-5xl font-extrabold leading-tight animate-fade-in">
+	    Empower Businesses through <span class="text-blue-700">Innovative, Reliable Digital Solutions</span>
+        </h1>
+        <p class="text-lg text-gray-800 mt-4 animate-fade-in-slow">
+            We craft custom websites, apps, and seamless integrations tailored for success.
+        </p>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white rounded-lg shadow-md transition">
+            Get Started
+        </a>
+    </div>
+</header>
+
+
+    <!-- Services Section (Lazy Loaded) -->
+    <!-- Services Section -->
+<section id="services" class="lazy-section text-center p-20 bg-white">
+    <h3 class="text-3xl font-bold">Our Services</h3>
+    <p class="mt-4 text-lg text-gray-600">We specialize in providing top-tier digital solutions for businesses.</p>
+
+    <!-- Services Grid -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <!-- Individual Service Cards -->
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-globe text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">Custom Website Development</h4>
+                <p class="text-gray-700 mt-2">Tailored website solutions that align with your business goals.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-mobile-alt text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">App Development</h4>
+                <p class="text-gray-700 mt-2">Custom-built applications tailored to your business needs.</p>
+            </div>
+        </div>
+        
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-tools text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">Support & Maintenance</h4>
+                <p class="text-gray-700 mt-2">Reliable support and continuous maintenance for seamless operation.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-cogs text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">System Enhancements</h4>
+                <p class="text-gray-700 mt-2">Upgrade and optimize existing systems for better efficiency.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-paint-brush text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">Graphic Design & Prototyping</h4>
+                <p class="text-gray-700 mt-2">High-quality design and UI/UX prototyping to visualize your ideas.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-server text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">Hosting & Domain Services</h4>
+                <p class="text-gray-700 mt-2">Reliable hosting and domain registration services for your website.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-code text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">API Integration</h4>
+                <p class="text-gray-700 mt-2">Seamless API connections for enhanced functionalities and automation.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center space-x-3">
+            <i class="fas fa-comments text-blue-700 text-2xl"></i>
+            <div>
+                <h4 class="text-xl font-semibold text-blue-700">Consultation Services</h4>
+                <p class="text-gray-700 mt-2">Expert advice and strategy for digital transformation success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- About Us Section (Lazy Loaded) -->
+<section id="about" class="lazy-section text-center p-20 bg-gray-200">
+  <h3 class="text-3xl font-bold">About Us</h3>
+
+  <div class="max-w-4xl mx-auto mt-6 flex items-center space-x-3">
+    <div>
+      <h4 class="text-xl font-semibold text-blue-700">
+        Our Mission <i class="fas fa-bullseye text-blue-700 text-2xl"></i>
+      </h4>
+      <p class="text-gray-700 mt-2">
+        We empower businesses with innovative, reliable, and scalable digital solutions.
+        Our mission is to bridge technology with seamless user experiences, helping businesses thrive.
+      </p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto mt-6 flex items-center space-x-3">
+    <div>
+      <h4 class="text-xl font-semibold text-blue-700">
+        Our Vision <i class="fas fa-lightbulb text-blue-700 text-2xl"></i>
+      </h4>
+      <p class="text-gray-700 mt-2">
+        To become a trusted digital solutions provider recognized for excellence, creativity, and lasting impact.
+        We envision a future where businesses, regardless of their size, have access to powerful and affordable web technologies that accelerate growth and success.
+      </p>
+    </div>
+  </div>
+
+  <!-- Team Members Section -->
+  <div class="max-w-4xl mx-auto mt-6">
+    <h4 class="text-xl font-semibold text-blue-700">
+      Meet the Team <i class="fas fa-users text-blue-700 text-2xl"></i>
+    </h4>
+    <p class="text-gray-700 mt-2">
+      A passionate group of professionals from the Ilocos Region, Philippines, dedicated to crafting powerful digital solutions.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <!-- Team Member 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fas fa-chart-line text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Ron Tadeo</h5>
+        <p class="text-gray-600 text-center">Lead Developer | 20+ Years Experience</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+          Ensuring technical excellence in delivering scalable, high-performance solutions.
+        </p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fa-solid fa-diagram-project text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Anth Real</h5>
+        <p class="text-gray-600 text-center">Lead Developer | 15+ Years Experience</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+          Overseeing project execution, team productivity &amp; resource planning.
+        </p>
+      </div>
+
+      <!-- Team Member 3 - Software Engineer -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fa-solid fa-screwdriver-wrench text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Vhon Bautista</h5>
+        <p class="text-gray-600 text-center">Software Engineer</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+	  Specializing in back-end optimization, delivering innovative solutions, and driving process automation.
+        </p>
+      </div>
+
+      <!-- Team Member 4 - Software Engineer -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fas fa-laptop text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Clarence De Guzman</h5>
+        <p class="text-gray-600 text-center">Software Engineer</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+          Focused on backend development, performance optimization &amp; system maintenance.
+        </p>
+      </div>
+
+      <!-- Team Member 5 - UX/UI Designer -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fas fa-pencil-alt text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Whilmer Realigue</h5>
+        <p class="text-gray-600 text-center">UX/UI Designer</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+	  Designing seamless user experiences and visually engaging interfaces.
+        </p>
+      </div>
+
+      <!-- Team Member 6 - UX/UI Designer -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fa-solid fa-palette text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Simon Maningding</h5>
+        <p class="text-gray-600 text-center">UX/UI Designer</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+          Specializing in prototypes, visual design &amp; user-centric interfaces.
+        </p>
+      </div>
+
+      <!-- Team Member 7 - Quality Assurance Specialist -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fa-solid fa-search text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Vince Kaizer Gavina</h5>
+        <p class="text-gray-600 text-center">Quality Assurance Specialist</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+	  Conduct advanced testing, perform debugging, and implement security enhancements.
+        </p>
+      </div>
+
+      <!-- Team Member 8 - Project Coordinator & Client Relations Specialist -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transform transition hover:scale-105">
+        <i class="fa-solid fa-clipboard-list text-blue-700 text-3xl"></i>
+        <h5 class="text-lg font-bold text-blue-700 mt-4">Jayson Nathaniel Tan</h5>
+        <p class="text-gray-600 text-center">Project Coordinator &amp; Client Relations Specialist</p>
+        <p class="text-gray-500 text-center mt-2 text-sm">
+          Handling client communication, documentation &amp; UX testing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section (Lazy Loaded) -->
+<section id="contact" class="lazy-section text-center p-20 bg-white">
+  <h3 class="text-3xl font-bold">Contact Us</h3>
+  <p class="mt-4 text-lg text-gray-600">Reach out to us for collaboration and inquiries.</p>
+
+  <!-- Contact Form -->
+  <div class="max-w-4xl mx-auto mt-10 bg-gray-100 p-6 rounded-lg shadow-md">
+    <form>
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 text-left font-semibold">Name</label>
+        <input id="name" type="text" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 text-left font-semibold">Email</label>
+        <input id="email" type="email" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-gray-700 text-left font-semibold">Message</label>
+        <textarea id="message" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your message"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white p-2 rounded-lg">
+        Send Message
+      </button>
+    </form>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="mt-10 flex justify-center space-x-6 text-blue-700">
+    <a href="#" aria-label="Facebook" class="text-2xl hover:text-blue-500">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="#" aria-label="Twitter" class="text-2xl hover:text-blue-500">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="#" aria-label="LinkedIn" class="text-2xl hover:text-blue-500">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="#" aria-label="Instagram" class="text-2xl hover:text-blue-500">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-300 text-blue text-center p-6">
+  <p>&copy; 2025 PH Core Solutions. All rights reserved.</p>
+</footer>
+
+<script>
+  // Initialize particles
+  document.addEventListener("DOMContentLoaded", function () {
+    particlesJS('particles-js', {
+      particles: { 
+        number: { 
+          value: 60, 
+          density: { enable: true, value_area: 800 } 
+        }, 
+        color: { value: "#ffffff" },
+        shape: { type: "circle" }, 
+        opacity: { value: 0.5 }, 
+        size: { value: 3 }, 
+        line_linked: { enable: true, color: "#ffffff" }
+      }
+    });
+  });
+
+  // Lazy loading sections
+  const lazySections = document.querySelectorAll('.lazy-section');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target); // Stop observing after it's visible
+      }
+    });
+  }, { threshold: 0.1 });
+
+  lazySections.forEach(section => observer.observe(section));
+</script>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
